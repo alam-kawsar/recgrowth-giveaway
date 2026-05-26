@@ -225,6 +225,16 @@ h1 .red { color: var(--red); }
 .dash-headline span { color: var(--red); }
 
 /* stat cards */
+.powered-strip {
+  margin: 8px -24px -24px;
+  border-top: 1px solid #E8E6E1;
+  border-radius: 0 0 14px 14px;
+  overflow: hidden;
+}
+.powered-strip img {
+  display: block; width: 100%; height: auto;
+}
+
 .stat-row {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -545,7 +555,7 @@ footer {
   </div>
   <h1>A system that finds companies<br><span class="red">struggling to fill roles</span> —<br>every month, on autopilot.</h1>
   <p class="subhead">
-    Get the complete, ready-to-run n8n workflow system + setup guide. Install once, let it surface your highest-value opportunities automatically — with <strong>Hiring Manager</strong> and <strong>Talent Team</strong> contacts included.
+    Get the complete, ready-to-run n8n workflow system + setup guide.<br>Install once, let it surface your highest-value opportunities automatically — with <strong style="white-space:nowrap">Hiring Manager</strong> and <strong>Talent Team</strong> contacts.
   </p>
   <div class="free-pill">
     Not a tool you subscribe to. A system you own.
@@ -647,32 +657,13 @@ footer {
               <td class="col-days"><span class="days-num warm">101d</span></td>
               <td><span class="badge spec">Spec Changed</span></td>
             </tr>
-            <tr>
-              <td><div class="role-name">Chief Nursing Officer</div></td>
-              <td><span class="company-name">Mercy Health</span></td>
-              <td class="col-days"><span class="days-num warm">95d</span></td>
-              <td><span class="badge open45">45+ Days Open</span></td>
-            </tr>
-            <tr>
-              <td><div class="role-name">Chief Nursing Officer</div></td>
-              <td><span class="company-name">Prime Healthcare</span></td>
-              <td class="col-days"><span class="days-num warm">89d</span></td>
-              <td><span class="badge open45">45+ Days Open</span></td>
-            </tr>
-            <tr>
-              <td><div class="role-name">Chief Nursing Officer</div></td>
-              <td><span class="company-name">Trinity Health</span></td>
-              <td class="col-days"><span class="days-num warm">89d</span></td>
-              <td><span class="badge priority">Priority Hiring</span></td>
-            </tr>
-            <tr>
-              <td><div class="role-name">Chief Nursing Officer</div></td>
-              <td><span class="company-name">Lifepoint Health</span></td>
-              <td class="col-days"><span class="days-num mild">69d</span></td>
-              <td><span class="badge repost">Reposted</span></td>
-            </tr>
           </tbody>
         </table>
+
+        <!-- Powered by strip -->
+        <div class="powered-strip">
+          <img src="powered-by.png" alt="Powered by Apify, LinkdAPI, Supabase, OpenRouter, FullEnrich, Zyte">
+        </div>
       </div>
 
     </div><!-- /dashboard-card -->
